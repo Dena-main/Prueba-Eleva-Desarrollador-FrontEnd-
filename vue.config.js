@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = defineConfig({
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/mi-app/' // Cambia esto según la ruta donde se despliega tu aplicación
+    ? '/mi-app/' 
     : '/',
 
   outputDir: 'dist',
@@ -12,13 +12,13 @@ module.exports = defineConfig({
   filenameHashing: true,
 
   devServer: {
-    port: 8080,  // Puerto en el que se ejecutará el servidor de desarrollo
-    open: true,  // Abrir el navegador automáticamente al iniciar el servidor
+    port: 8080,  
+    open: true,  
     proxy: {
       '^/api': {
-        target: 'http://localhost:5000',  // URL del servidor al que se deben redirigir las solicitudes
-        changeOrigin: true,  // Cambiar el origen de la solicitud a la URL del objetivo
-        ws: true,  // Habilitar el soporte de WebSocket
+        target: 'http://localhost:5000',  
+        changeOrigin: true,  
+        ws: true,  
       }
     },
     client: {

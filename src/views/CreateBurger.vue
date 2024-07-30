@@ -59,7 +59,4 @@
   };
   </script>
   
-  <style scoped>
-  /* Estilos según sea necesario */
-  </style>
   

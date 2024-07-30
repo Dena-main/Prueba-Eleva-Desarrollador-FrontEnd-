@@ -55,7 +55,7 @@ export default {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        // Actualiza la lista de hamburguesas después de eliminar una
+        // Esto actualiza la lista de hamburguesas después de eliminar una
         this.fetchHamburguesas();
       } catch (error) {
         console.error('Error borrando hamburguesa:', error);
